@@ -11,7 +11,6 @@ import numpy as np
 from sympy import *
 
 def factorisation_method(f, max_iter=4):
-    #buat variabel untuk fungsi x dan semua koefisien nya
     x = symbols('x')
     a0 = 0.0
     poly = Poly(f, x)
@@ -40,7 +39,6 @@ def factorisation_method(f, max_iter=4):
         print(f"  a1 = A2 - b0 = {A2} - {b0} = {a1:.2f}")
         print(f"  a0 = A1 - a1 * b0 = {A1} - {a1} * {b0} = {a0:.2f}\n")
 
-    #bulatkan hasil akhir b0, a1, dan a0
     b0_res = round(b0)
     a1_res = round(a1)
     a0_res = round(a0)
